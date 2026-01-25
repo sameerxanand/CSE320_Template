@@ -14,7 +14,7 @@ with a focus on input/output, strings in C, bitwise manipulations,
 and the use of pointers. Writing C code to parse PNGs,
 poses a realistic and challenging exercise involving these topics.
 
-> :nerd: Reference for pointers: [https://beej.us/guide/bgc/html/#pointers](https://beej.us/guide/bgc/html/#pointers).
+> :nerd_face: Reference for pointers: [https://beej.us/guide/bgc/html/#pointers](https://beej.us/guide/bgc/html/#pointers).
 
 For all assignments in this course, you **MUST NOT** put any of the functions
 that you write into the `main.c` file.  The file `main.c` **MUST ONLY** contain
@@ -283,7 +283,7 @@ the argument processing phase, then the program should print a single line error
 to stderr that describes the issue (using the appropriate error macro from `global.h`)
 and then exit with status `EXIT_FAILURE`.
 
-> :nerd: Reference for command line arguments: [https://beej.us/guide/bgc/html/#command-line-arguments](https://beej.us/guide/bgc/html/#command-line-arguments).
+> :nerd_face: Reference for command line arguments: [https://beej.us/guide/bgc/html/#command-line-arguments](https://beej.us/guide/bgc/html/#command-line-arguments).
 
 The `main` function in `main.c` implements the two-pass argument processing approach:
 
@@ -580,7 +580,7 @@ $ hd tests/data/Large_batman_3.png | less
 00000080  cd b3 03 cf b5 02 63 57  03 37 30 02 1d 1a 01 03  |......cW.70.....|
 ```
 
-> :nerd: As the complete output would be really long, I have piped it into the `less`
+> :nerd_face: As the complete output would be really long, I have piped it into the `less`
 > utility to allow it to be displayed one screen at a time.
 > (You can type `h` at the `less` prompt to get help information on what
 > it can do for you.  Type `q` at the prompt to exit `less`.)
@@ -930,7 +930,7 @@ sections of a program (units) are tested individually to ensure that they are
 all functioning properly. This is a very common practice in industry and is
 often a requested skill by companies hiring graduates.
 
-> :nerd: Some developers consider testing to be so important that they use a
+> :nerd_face: Some developers consider testing to be so important that they use a
 > work flow called test driven development. In TDD, requirements are turned into
 > failing unit tests. The goal is then to write code to make these tests pass.
 
@@ -969,6 +969,6 @@ should be maintained) and that your homework compiles (you should be sure to try
 with both `make clean all` and `make clean debug` because there are certain errors that can
 occur one way but not the other).
 
-> :nerd: When writing your program try to comment as much as possible. Try to
+> :nerd_face: When writing your program try to comment as much as possible. Try to
 > stay consistent with your formatting. It is much easier for your TA and the
 > professor to help you if we can figure out what your code does quickly!
