@@ -1,7 +1,9 @@
 # Homework 1 - CSE 320 - Spring 2026
 #### Professor Dan Benz
 
-### **Due Date: **
+Readme version 1.0, see Piazza for any updates
+
+### **Due Date: Sunday February 15th @ 11:59 **
 
 **Read the entire doc before you start**
 
