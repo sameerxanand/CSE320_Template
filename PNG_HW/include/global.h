@@ -6,16 +6,16 @@
 
 /* Usage/Help Messages */
 #define PRINT_USAGE(prog_name) do { \
-    fprintf(stderr, "Usage: %s -f <png_file> [options]\n", prog_name); \
+    fprintf(stderr, "Usage: %s -f png_file [options]\n", prog_name); \
     fprintf(stderr, "Options:\n"); \
-    fprintf(stderr, "  -f <png_file>         Input PNG file (required)\n"); \
+    fprintf(stderr, "  -f png_file           Input PNG file (required)\n"); \
     fprintf(stderr, "  -h                    Print this help message\n"); \
     fprintf(stderr, "  -s                    Print chunk summary\n"); \
     fprintf(stderr, "  -p                    Print palette summary\n"); \
     fprintf(stderr, "  -i                    Print IHDR fields\n"); \
-    fprintf(stderr, "  -e <message> -o <out> Encode message and write to output file\n"); \
+    fprintf(stderr, "  -e message -o out_file    Encode message and write to output file\n"); \
     fprintf(stderr, "  -d                    Decode and print hidden message\n"); \
-    fprintf(stderr, "  -m <file2> -o <out> [-w <width>] [-g <height>]  Overlay file2 (smaller) over input and write to output\n"); \
+    fprintf(stderr, "  -m file2 -o out_file [-w width] [-g height]  Overlay file2 (smaller) over input and write to output\n"); \
 } while(0)
 
 /* Error Messages */

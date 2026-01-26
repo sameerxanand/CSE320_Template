@@ -166,17 +166,16 @@ by the program.
 The specific usage scenarios for your program are as follows:
 
 <pre>
-Usage: bin/png -f <png_file> [options]
-
+Usage: bin/png -f png_file [options]
 Options:
-  -f <png_file>         Input PNG file (required)
+  -f png_file        Input PNG file (required)
   -h                    Print this help message
   -s                    Print chunk summary
   -p                    Print palette summary
   -i                    Print IHDR fields
-  -e <message> -o <out> Encode message and write to output file
+  -e message -o out_file Encode message and write to output file
   -d                    Decode and print hidden message
-  -m <file2> -o <out> [-w <width>] [-g <height>]  Overlay file2 (smaller) over input and write to output
+  -m file2 -o out_file [-w width] [-g height]  Overlay file2 (smaller) over input and write to output
 </pre>
 
 > :scream: A `PRINT_USAGE` macro has already been provided for you in the `global.h`
