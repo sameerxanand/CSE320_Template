@@ -13,9 +13,6 @@ typedef struct {
 } lz_token_t;
 
 lz_token_t* lz_compress_tokens(const unsigned char* data, size_t len, size_t* num_tokens);
-unsigned char * lz_decompress_tokens(const lz_token_t* tokens, size_t num_tokens, size_t *out_len);
-
-
 
 unsigned char * lz_to_length_distance_codes(unsigned char *data, size_t len, size_t *out_len);
 

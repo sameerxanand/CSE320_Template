@@ -247,16 +247,7 @@ Your compressor must find the longest matching substring within 32768 previous b
 If a matching string at least 3 bytes long cannot be found, the 2 bytes must be appended to the array as literals.
 
 ## LZ77 Decompression
-`unsigned char * lz_decompress_tokens(const lz_token_t* tokens, size_t num_tokens, size_t *out_len)`\
-Should return `NULL` on any invalid data (e.g. if it encounters a token where both literal value and distance-length values are set, etc.)
-Parameter definitions are given in the comment above the function in `lz.c`.
-
-It is possible for the referenced string to exceed the end of the sliding window/the offset is less than the length (e.g. a string starting 1 byte ago with a length of 5 is referenced).
-In these cases, the referened bytes that are in the output buffer (let's say there are `n` of them) are inserted into the output buffer again and the decoding process continues with `length - n` until `length` = 0.\
-Going with the above example, the last byte of the output buffer would be copied into the output buffer again and the decompressor would move on with offset = 1 (from the next position in the compressed data) and length = 4.\
-\
-
-Although distance values of 30 and 31 can technically be expressed, your `lz_decompress` function should stop and return an error if it encounters them.
+The LZ decompression step is done within huffman_decode (see next section)
 
 ## Helper Functions
 - `static int find_match(const unsigned char* data, size_t pos, size_t len, size_t offset_limit, size_t* out_offset)`
